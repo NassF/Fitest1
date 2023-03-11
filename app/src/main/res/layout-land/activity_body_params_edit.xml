@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backredactorparams"
+    tools:context=".ParamsEdit">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/peopleagain" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProf2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/vashprofile"
+        android:clickable="false"
+        android:minHeight="?attr/actionBarSize"
+        android:onClick="paramEditClick"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toStartOf="@+id/editHip"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/whitearrow" />
+
+    <EditText
+        android:id="@+id/editHip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/fieldedit"
+        android:inputType="number"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        android:paddingStart="20dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <EditText
+        android:id="@+id/editButtocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/fieldedit"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/editBreast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldedit"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/editTall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/fieldedit"
+        android:gravity="center"
+        android:imeOptions="actionGo"
+        android:inputType="number"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editShoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldedit"
+        android:hint="25.3"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintStart_toEndOf="@+id/imageView21" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/fieldedit"
+        android:hint="50.5"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintStart_toEndOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/leftfieldforparam" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/textHip"
+        app:srcCompat="@drawable/leftfieldforparam" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/leftfieldforparam" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:srcCompat="@drawable/leftfieldforparam" />
+
+    <EditText
+        android:id="@+id/editWaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldedit"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9" />
+
+    <EditText
+        android:id="@+id/editBiceps"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fieldedit"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00574F4F"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#00CFC7C7"
+        android:textCursorDrawable="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:srcCompat="@drawable/shortleftfieldforparam" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarProf2"
+        app:srcCompat="@drawable/weightwtharrow" />
+
+    <TextView
+        android:id="@+id/textWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="@+id/imageView22"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/textBiceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/textBreast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textShoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textWaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textHip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textButtocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/buttonsave"
+        android:onClick="paramEditClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

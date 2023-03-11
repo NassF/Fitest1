@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backchat"
+    tools:context=".ChatSportsman">
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttontrenwthoutred"
+            android:gravity="bottom|left"
+            android:onClick="chatSportClick" />
+
+        <Button
+            android:id="@+id/buttonEats"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttoneatred"
+            android:gravity="bottom|center"
+            android:onClick="chatSportClick" />
+
+        <Button
+            android:id="@+id/buttonChats"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonchatwhite" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonprofilewithblackhead"
+        android:onClick="chatSportClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="0dp"
+        android:layout_height="533dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/relativeLayoutMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMessage"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+
+        android:layout_marginTop="608dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/fieldchatred" />
+
+
+        <EditText
+            android:id="@+id/writeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignTop="@+id/imageView31"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="22dp"
+            android:autofillHints=""
+            android:background="@drawable/chatsfieldwhite"
+            android:ems="10"
+            android:hint="Сообщение"
+            android:inputType="textLongMessage"
+            android:maxLength="500"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:soundEffectsEnabled="true"
+            android:textColor="#504C4C"
+            android:textColorHighlight="#A69F9F"
+            android:textColorHint="#504C4C"
+            android:textColorLink="#00FFFFFF" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView31"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            android:tint="?attr/colorPrimaryDark"
+            app:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/buttonsend" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

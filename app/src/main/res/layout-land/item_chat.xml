@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    android:layout_marginTop="6dp"
+
+    android:paddingTop="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rv_osnova"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/imageview" />
+
+        <TextView
+            android:id="@+id/listName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageProfile"
+            android:paddingStart="15dp"
+            android:text="Маркова Анастасия"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileClientView">
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chekclient" />
+
+    <ImageButton
+        android:id="@+id/programmTrainings"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:onClick="profileSpViewClick"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/programmEat"
+        app:layout_constraintEnd_toEndOf="@+id/formTrainings"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/formTrainings"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageButton
+        android:id="@+id/formTrainings"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:onClick="profileSpViewClick"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/formEat"
+        app:layout_constraintEnd_toEndOf="@+id/formParams"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/formParams"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageButton
+        android:id="@+id/programmEat"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="profileSpViewClick"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/formTrainings"
+        app:layout_constraintEnd_toEndOf="@+id/formTrainings"
+        app:layout_constraintStart_toStartOf="@+id/formTrainings"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageButton
+        android:id="@+id/formParams"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="48dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="profileSpViewClick"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/redbutton" />
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/listClients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="bottom|left"
+            app:srcCompat="@drawable/clientiredwithout"
+            android:onClick="profileSpViewClick"/>
+
+        <ImageButton
+            android:id="@+id/openYourProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="bottom|center"
+            app:srcCompat="@drawable/profileredwithoutline"
+            android:onClick="profileSpViewClick"/>
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="bottom|right"
+            app:srcCompat="@drawable/chatredwithoutline"
+            android:onClick="profileSpViewClick"/>
+    </TableRow>
+
+    <ImageButton
+        android:id="@+id/formEat"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="profileSpViewClick"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/formParams"
+        app:layout_constraintEnd_toEndOf="@+id/formParams"
+        app:layout_constraintStart_toStartOf="@+id/formParams"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/formParams"
+        app:layout_constraintEnd_toEndOf="@+id/formParams"
+        app:layout_constraintStart_toStartOf="@+id/formParams"
+        app:layout_constraintTop_toTopOf="@+id/formParams"
+        app:srcCompat="@drawable/parametr" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/programmEat"
+        app:layout_constraintEnd_toEndOf="@+id/programmEat"
+        app:layout_constraintStart_toStartOf="@+id/programmEat"
+        app:layout_constraintTop_toTopOf="@+id/programmEat"
+        app:srcCompat="@drawable/programpitaniye" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/formTrainings"
+        app:layout_constraintEnd_toEndOf="@+id/formTrainings"
+        app:layout_constraintStart_toStartOf="@+id/formTrainings"
+        app:layout_constraintTop_toTopOf="@+id/formTrainings"
+        app:srcCompat="@drawable/treni" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/formEat"
+        app:layout_constraintEnd_toEndOf="@+id/formEat"
+        app:layout_constraintStart_toStartOf="@+id/formEat"
+        app:layout_constraintTop_toTopOf="@+id/formEat"
+        app:srcCompat="@drawable/pitaniye" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/programmTrainings"
+        app:layout_constraintEnd_toEndOf="@+id/programmTrainings"
+        app:layout_constraintStart_toStartOf="@+id/programmTrainings"
+        app:layout_constraintTop_toTopOf="@+id/programmTrainings"
+        app:srcCompat="@drawable/programtreni" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="340dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/programmTrainings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blackfone" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView46"
+        app:layout_constraintStart_toStartOf="@+id/imageView46"
+        app:srcCompat="@drawable/po4ta" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView30"
+        app:layout_constraintStart_toStartOf="@+id/imageView43"
+        app:srcCompat="@drawable/nomer" />
+
+    <ImageButton
+        android:id="@+id/iconChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/imageView43"
+        app:layout_constraintEnd_toEndOf="@+id/imageView43"
+        app:srcCompat="@drawable/chatmb"
+        android:onClick="profileSpViewClick"/>
+
+    <ImageButton
+        android:id="@+id/lookForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/imageView43"
+        app:layout_constraintEnd_toStartOf="@+id/iconChat"
+        app:layout_constraintTop_toTopOf="@+id/iconChat"
+        app:srcCompat="@drawable/anketa"
+        android:onClick="profileSpViewClick"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:text="Фатеева Анастасия"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:text="mailmail@mail.ru"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/imageView45"
+        app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="89999990000"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/textMail" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+        app:layout_constraintEnd_toEndOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/redrect" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+        app:layout_constraintStart_toStartOf="@+id/imageView43"
+        app:srcCompat="@drawable/trenernumoftrainings" />
+
+    <TextView
+        android:id="@+id/textNumOfTren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

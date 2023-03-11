@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitest">
+
+    <permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:compatibleWidthLimitDp="720"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:requiresSmallestWidthDp="720"
+        android:smallScreens="false" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:minSdkVersion="7"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".FormSportsmanView"></activity>
+        <activity android:name=".RecyclerSpisocChatov.SpisocChatov" />
+        <activity android:name=".SelectTrener.SelectTrener" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListClient.ListClient" />
+        <activity android:name=".ReportEat" />
+        <activity android:name=".ProfileClient" />
+        <activity
+            android:name=".FormTrainer"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".LoadTrainings"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FormSportsmanP2"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ParamsEdit"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".FormSportsmanP1"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TrainingsSportsman"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TrainingsTrainer"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChatTrainer"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChatSportsman"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProfileTrenerView"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Registration"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TrenerSelectClientView"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LoadEat"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ParamsSportsman"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ParamsTrainer"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".ProfileTrainer"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RedactorTrainer"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Eat"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RedactorClient"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProfileClientView"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

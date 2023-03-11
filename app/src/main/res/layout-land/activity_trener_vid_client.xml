@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrenerVidClient">
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/_____1_" />
+
+    <ImageButton
+        android:id="@+id/trenerSelectBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView62"
+        app:srcCompat="@drawable/shapkatrenervid" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/perechisleniyatrenervid" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/imageView63"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/costObject"
+        android:layout_width="174dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/description2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/PhotoImg"
+        app:srcCompat="@drawable/costrenervid" />
+
+    <TextView
+        android:id="@+id/nameThisTrainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/costObject"
+        app:layout_constraintEnd_toEndOf="@+id/costObject"
+        app:layout_constraintTop_toBottomOf="@+id/trenerSelectBack" />
+
+    <ImageView
+        android:id="@+id/PhotoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toBottomOf="@+id/trenerSelectBack"
+        app:srcCompat="@drawable/photo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
